@@ -2,7 +2,7 @@ import React from "react";
 import { BsFillSunFill } from "react-icons/bs";
 function NavBar() {
   return (
-    <div className="bg-red-200">
+    <div className="bg-red-200 shadow shadow-gray-500">
       <div className="bg-secondary text-white py-5 flex justify-around">
         <div>Moview Review App</div>
         <ul className="flex items-center space-x-6">
@@ -14,7 +14,7 @@ function NavBar() {
           <li>
             <input
               type="text"
-              className="border-2 border-dark-subtle p-1 rounded bg-transparent outline-none focus:border-white "
+              className="border-2 border-dark-subtle p-1 rounded bg-transparent outline-none focus:border-white"
               placeholder="Seach here"
             />
           </li>
