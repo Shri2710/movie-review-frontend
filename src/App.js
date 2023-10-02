@@ -1,9 +1,10 @@
 import React from 'react'
+import NavBar from './components/user/NavBar'
 
 const App = () => {
   return (
-    <div className='flex justify-center items-center h-[100%]'>
-        <h1 className='font-bold text-2xl'>Hello</h1>
+    <div>
+        <NavBar />
     </div>
   )
 }
