@@ -2,10 +2,11 @@ import React from "react";
 import Title from "../form/Title";
 import FormInput from "../form/FormInput";
 import Submit from "../form/Submit";
+import { Link } from "react-router-dom";
 
 const SignIn = () => {
   return (
-    <div className="h-full flex justify-center items-center bg-primary">
+    <div className="bg-primary">
       <div className="bg-secondary py-10 px-20 w-[600px]">
         <form>
           <Title>Sign In</Title>
@@ -14,8 +15,8 @@ const SignIn = () => {
           <Submit value='Sign In'/>
 
           <div className="flex justify-between m-10">
-              <div  className="text-dark-subtle cursor-pointer hover:text-white">Forgot Password?</div>
-              <div className="text-dark-subtle cursor-pointer hover:text-white">Sign Up</div>
+              <div  className="text-dark-subtle cursor-pointer hover:text-white"><Link to='/forget-password'>Forgot Password</Link></div>
+              <div className="text-dark-subtle cursor-pointer hover:text-white"><Link to='/sign-up'>Sign Up</Link></div>
           </div>
         </form>
       </div>
