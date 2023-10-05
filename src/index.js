@@ -8,14 +8,17 @@ import EmailVerification from "./components/auth/EmailVerification";
 import ForgetPassword from "./components/auth/ForgetPassword";
 import { Outlet, RouterProvider, createBrowserRouter } from "react-router-dom";
 import ConfirmPassword from "./components/auth/ConfirmPassword";
+import { ThemeProvider } from "./components/context/ThemeProvider";
 const App = () => {
   return (
-    <div className="h-screen bg-primary ">
-      <NavBar />
-      <div className="w-full h-[calc(100%-76px)] flex justify-center items-center">
-        <Outlet />
+    <ThemeProvider>
+      <div className="h-screen bg-primary ">
+        <NavBar />
+        <div className="w-full h-[calc(100%-76px)] flex justify-center items-center">
+          <Outlet />
+        </div>
       </div>
-    </div>
+    </ThemeProvider>
   );
 };
 

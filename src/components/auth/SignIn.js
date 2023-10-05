@@ -5,9 +5,10 @@ import Submit from "../form/Submit";
 import { Link } from "react-router-dom";
 
 const SignIn = () => {
+
   return (
     <div className="bg-primary">
-      <div className="bg-secondary py-10 px-20 w-[600px]">
+      <div className="dark:bg-secondary py-10 px-20 w-[600px]">
         <form>
           <Title>Sign In</Title>
           <FormInput type="email" label="Email" name="email" placeholder="example@gmail.com" />

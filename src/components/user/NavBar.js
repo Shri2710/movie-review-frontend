@@ -1,13 +1,21 @@
 import React from "react";
 import { BsFillSunFill } from "react-icons/bs";
+import { Link } from "react-router-dom";
+import { useTheme } from "../hooks";
 function NavBar() {
+
+  const {toggleTheme} = useTheme();
+
+const handleToggleTheme  = ()=>{
+   toggleTheme();
+}
   return (
     <div className="bg-red-200 shadow shadow-gray-500">
       <div className="bg-secondary text-white py-5 flex justify-around">
         <div>Moview Review App</div>
         <ul className="flex items-center space-x-6">
           <li>
-            <button>
+            <button onClick={handleToggleTheme}>
               <BsFillSunFill size={24} />
             </button>
           </li>
@@ -19,9 +27,9 @@ function NavBar() {
             />
           </li>
           <li>
-             <div>
-                 Login
-             </div>
+            <Link to="/">
+              <div>Login</div>
+            </Link>
           </li>
         </ul>
       </div>
