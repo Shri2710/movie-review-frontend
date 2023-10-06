@@ -12,7 +12,7 @@ import { ThemeProvider } from "./components/context/ThemeProvider";
 const App = () => {
   return (
     <ThemeProvider>
-      <div className="h-screen bg-primary ">
+      <div className="h-screen dark:bg-primary ">
         <NavBar />
         <div className="w-full h-[calc(100%-76px)] flex justify-center items-center">
           <Outlet />

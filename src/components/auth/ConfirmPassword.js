@@ -5,8 +5,8 @@ import Submit from '../form/Submit';
 
 const ConfirmPassword = () => {
   return (
-    <div className="bg-primary">
-      <div className="bg-secondary py-10 px-20 w-[600px]">
+    <div className="dark:bg-primary">
+      <div className="dark:bg-secondary bg-white drop-shadow-lg py-10 px-20 w-[600px]">
         <form>
           <Title>Enter New Password</Title>
           <FormInput type="password" label="New Password" name="newpassword" placeholder="New Password" />

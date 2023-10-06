@@ -7,8 +7,8 @@ import { Link } from "react-router-dom";
 const SignIn = () => {
 
   return (
-    <div className="bg-primary">
-      <div className="dark:bg-secondary py-10 px-20 w-[600px]">
+    <div className="dark:bg-primary">
+      <div className="dark:bg-secondary drop-shadow-lg bg-white py-10 px-20 w-[600px]">
         <form>
           <Title>Sign In</Title>
           <FormInput type="email" label="Email" name="email" placeholder="example@gmail.com" />
@@ -16,8 +16,8 @@ const SignIn = () => {
           <Submit value='Sign In'/>
 
           <div className="flex justify-between m-10">
-              <div  className="text-dark-subtle cursor-pointer hover:text-white"><Link to='/forget-password'>Forgot Password</Link></div>
-              <div className="text-dark-subtle cursor-pointer hover:text-white"><Link to='/sign-up'>Sign Up</Link></div>
+              <div  className="dark:text-dark-subtle text-light-subtle cursor-pointer dark:hover:text-white hover:text-primary"><Link to='/forget-password'>Forgot Password</Link></div>
+              <div className="dark:text-dark-subtle text-light-subtle cursor-pointer dark:hover:text-white hover:text-primary"><Link to='/sign-up'>Sign Up</Link></div>
           </div>
         </form>
       </div>
